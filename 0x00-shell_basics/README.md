@@ -15,3 +15,4 @@
 **14-copy_html** copies all html files(updated and new) from working to parent directory
 **100-lets_move** moves all files beginning with uppercase letters to /tmp/u directory
 **101-clean_emacs** deletes all files that end with ~
+**102-tree** creates a tree of folders (welcome/to/holberton) in current directory
