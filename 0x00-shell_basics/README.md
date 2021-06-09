@@ -13,3 +13,4 @@
 **12-filetype** prints the file type of iamafile found in /tmp folder
 **13-symbolic_link** creates the symbolic link __ls__ to /bin/ls
 **14-copy_html** copies all html files(updated and new) from working to parent directory
+**100-lets_move** moves all files beginning with uppercase letters to /tmp/u directory
