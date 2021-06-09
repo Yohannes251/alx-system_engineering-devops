@@ -11,3 +11,4 @@
 **10-back** chnages the working directory to the previous one
 **11-lists** lists all files (hidden also) in current, previous and /boot directories
 **12-filetype** prints the file type of iamafile found in /tmp folder
+**13-symbolic_link** creates the symbolic link __ls__ to /bin/ls
