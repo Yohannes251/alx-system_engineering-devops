@@ -6,3 +6,4 @@
 **5-listfilesdigitonly** displays current directory contents in long format with user and group ids displayed numerically and hidden files
 **6-firstdirectory** creates a directory named holberton in the /tmp/ directory
 **7-movethatfile** moves the file betty from /tmp to /tmp/holberton
+**8-firstdelete** deletes the file betty
