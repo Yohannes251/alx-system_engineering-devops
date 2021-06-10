@@ -14,3 +14,4 @@
 **13-change_group** changes the group owner of hello to holberton
 **100-change_owner_and_group** changes the owner to betty and the group owner to holberton
 **101-symbolic_link_permissions** changes the owner and group owner of _hello to betty and holberton
+**102-if_only** changes the owner of hello to betty only if it is owned by guillaume
