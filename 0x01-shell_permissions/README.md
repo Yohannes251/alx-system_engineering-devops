@@ -12,3 +12,4 @@
 **11-directories_permissions** adds execute permissions to all subdirectories in the current directory
 **12-directory_permissions** creates dir_holberton directory with 751 permissions
 **13-change_group** changes the group owner of hello to holberton
+**100-change_owner_and_group** changes the owner to betty and the group owner to holberton
