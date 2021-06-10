@@ -8,3 +8,4 @@
 **7-everybody** adds execution permission to the owner, the group owner and other users to the file hello
 **8-James_Bond** gives no permissions at all for owner and group and gives all permissions to other users on the file hello
 **9-John_Doe** give all permission to owner, read and execute permission to group owner and write and execute perimission to other users
+**10-mirror_permissions** sets the mode of the file hello the same as olleh's mode
