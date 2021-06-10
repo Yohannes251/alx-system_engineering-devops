@@ -13,3 +13,4 @@
 **12-directory_permissions** creates dir_holberton directory with 751 permissions
 **13-change_group** changes the group owner of hello to holberton
 **100-change_owner_and_group** changes the owner to betty and the group owner to holberton
+**101-symbolic_link_permissions** changes the owner and group owner of _hello to betty and holberton
