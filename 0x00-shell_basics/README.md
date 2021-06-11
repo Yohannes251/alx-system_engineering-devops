@@ -16,3 +16,5 @@
 **100-lets_move** moves all files beginning with uppercase letters to /tmp/u directory
 **101-clean_emacs** deletes all files that end with ~
 **102-tree** creates a tree of folders (welcome/to/holberton) in current directory
+**103-commas** lists all files and directories separated by commas and other properties
+**holberton.mgc** creates a magic file that detects Holberton data files containing the string HOLBERTON at offset 0
