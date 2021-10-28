@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays the content of /etc/password
+while read -r line; do
+	username=$(echo "$line" | cut -s -d: -f1)
+	userid=$(echo "$line" | cut -s -d: -f3)
+	homepath=$(echo "$line" | cut -s -d: -f6)
+	echo "$username:$userid:$homepath"
+done < /etc/passwd 
