@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script displays visitor IP with HTTP status code
+#+ from Apache log file sorted by number of occurence in list
+awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn 
