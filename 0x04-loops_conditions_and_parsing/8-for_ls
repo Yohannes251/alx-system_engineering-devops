@@ -2,5 +2,5 @@
 # This script displays content of current directory
 LIST="$(ls)"
 for i in $LIST; do
-	echo "${i#*_}"
+	echo "${i#*-}"
 done 
