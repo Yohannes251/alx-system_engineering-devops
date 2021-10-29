@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# This script displays "To infinity and beyond" indefinitely
+# Displays "I hate the kill command" when recieving SIGTERM signal
+# Displays "Y U no love me?!" when recieving SIGINT signal
+# Deletes /var/run/myscript.pid and terminates itself at SIGQUIT or SIGTERM
+
+SIGTERM_func()
+{
+	echo "I hate the kill command"
+	rm /var/run/myscript.pid
+	exit 0
+}
+
+SIGINT_func()
+{
+	echo "Y U no love me?!"
+}
+
+SIGQUIT_func()
+{
+	rm /var/run/myscript.pid
+	exit 0
+}
+
+trap "SIGTERM_func" SIGTERM
+trap "SIGINT_func" SIGINT
+trap "SIGQUIT_func" SIGQUIT
+
+pgrep -f 100-process_and_pid_file >> /var/run/myscript.pid
+
+while [[ 1 -eq 1 ]]; do
+	echo "To infinity and beyond"
+	sleep 2
+done
