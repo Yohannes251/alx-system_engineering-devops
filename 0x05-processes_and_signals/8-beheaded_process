@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script terminates "7-highlander" script
+# This script kills "7-highlander" script
 
-kill SIGKILL "$(pgrep -f 7-highlander)"
+kill -SIGKILL "$(pgrep -f 7-highlander)"
