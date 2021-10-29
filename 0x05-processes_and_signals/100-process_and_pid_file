@@ -4,7 +4,6 @@
 # Displays "Y U no love me?!" when recieving SIGINT signal
 # Deletes /var/run/myscript.pid and terminates itself at SIGQUIT or SIGTERM
 
-touch /var/run/myscript.pid
 echo $$ >> /var/run/myscript.pid
 
 SIGTERM_func()
