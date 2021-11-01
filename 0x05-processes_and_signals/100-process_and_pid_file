@@ -10,7 +10,7 @@ SIGTERM_func()
 {
 	echo "I hate the kill command"
 	rm -f /var/run/myscript.pid
-	exit
+	pkill 100-process_and_pid_file
 }
 
 SIGINT_func()
@@ -21,7 +21,7 @@ SIGINT_func()
 SIGQUIT_func()
 {
 	rm -f /var/run/myscript.pid
-	exit
+	pkill 100-process_and_pid_file
 }
 
 trap "SIGTERM_func" SIGTERM
