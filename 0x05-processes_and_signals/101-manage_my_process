@@ -7,17 +7,17 @@ if [ "${#args[@]}" -ne 1 ]; then
 else
 	if [ "$1" = "start" ]; then
 		./manage_my_process &
-		echo $$ >> /var/run/my_process.pid
+		echo $! > /var/run/my_process.pid
 		echo "manage_my_process started"
 	elif [ "$1" = "stop" ]; then
-		pkill -9 manage_my_process
+		kill -s -9 "$(cat /var/run/my_process.pid)"
 		rm -f /var/run/my_process.pid
 		echo "manage_my_process stopped"
 	elif [ "$1" = "restart" ]; then
-		pkill -9 manage_my_process
+		kill -s -9 "$(cat /var/run/my_process.pid)"
 		rm -f /var/run/my_process.pid
 		./manage_my_process &
-		echo $$ >> /var/run/my_process.pid
+		echo $! > /var/run/my_process.pid
 		echo "manage_my_process restarted"
 	fi
 fi
