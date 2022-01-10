@@ -1,4 +1,5 @@
 # Updates config file using puppet
+include stdlib
 
 file_line { 'Turn off passwd auth':
   ensure  => present,
